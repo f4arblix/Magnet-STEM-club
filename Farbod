@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Magnet STEM Club — Build. Plan. Succeed.</title>
+  <style>
+    :root{--accent:#0b76ef;--muted:#666}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;color:#111;line-height:1.45}
+    header{background:linear-gradient(90deg,#071a2f 0%, rgba(11,118,239,0.9) 100%);color:white;padding:28px 18px}
+    .container{max-width:1000px;margin:0 auto;padding:18px}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:8px 0 0;opacity:0.95}
+    nav{margin-top:14px}
+    nav a{color:rgba(255,255,255,0.95);text-decoration:none;margin-right:14px;font-weight:600}
+    main{padding:28px 18px}
+    .card{background:#fff;border-radius:12px;padding:18px;margin-bottom:18px;box-shadow:0 6px 18px rgba(10,10,20,0.06)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    @media(max-width:880px){.grid{grid-template-columns:1fr}}
+    .cta{display:inline-block;background:var(--accent);color:white;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700}
+    ul.bullets{padding-left:18px}
+    footer{padding:18px;text-align:center;color:var(--muted);font-size:14px}
+    .small{font-size:14px;color:var(--muted)}
+    .signup input, .signup textarea, .signup select{width:100%;padding:8px;margin:6px 0;border-radius:6px;border:1px solid #ddd}
+    .signup button{background:var(--accent);color:white;border:none;padding:10px 12px;border-radius:8px;font-weight:700;cursor:pointer}
+    .pill{display:inline-block;background:#f1f6ff;color:var(--accent);padding:6px 10px;border-radius:999px;font-weight:700;margin-right:8px}
+    blockquote{margin:12px 0;padding:12px 16px;background:#fbfbff;border-left:4px solid var(--accent);border-radius:8px}
+    .meta{color:var(--muted);font-size:13px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Magnet STEM Club</h1>
+      <p class="lead">Build. Plan. Succeed. — Learn time management by doing projects with friends.</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#why">Why Join</a>
+        <a href="#meetings">Meetings</a>
+        <a href="#signup">Join</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="grid">
+      <section>
+        <div class="card" id="about">
+          <h2>About the Club</h2>
+          <p>Magnet STEM Club is a student-run club that helps classmates learn practical time management while working on fun, hands-on STEM challenges. Instead of lectures, we plan small projects, divide tasks, and meet quick deadlines — so time management becomes a skill you actually use.</p>
+          <blockquote>
+            "Joining the club helped me stop cramming for assignments. Planning together made it easier — and way more fun." — club member
+          </blockquote>
+          <p class="small">No experience required. All grades welcome. Just bring curiosity and a phone or laptop.</p>
+        </div>
+
+        <div class="card" id="why">
+          <h2>Why Join?</h2>
+          <ul class="bullets">
+            <li>Practice realistic planning: break a project into small steps and set deadlines.</li>
+            <li>Accountability: teammates help keep each other on track.</li>
+            <li>Build skills: communication, leadership, and problem solving.</li>
+            <li>Less stress — better results. Learn without the lecture.</li>
+          </ul>
+        </div>
+
+        <div class="card" id="meetings">
+          <h2>Meeting Format (Example)</h2>
+          <ol>
+            <li>10 min: Check-in & quick time-management tip</li>
+            <li>30 min: Team planning — divide roles and set mini-deadlines</li>
+            <li>30 min: Hands-on build or challenge</li>
+            <li>10 min: Share results & reflect (what worked, what to change)</li>
+          </ol>
+          <p class="meta">Meetings: Thursdays after school • Room 205 • Try a free session!</p>
+        </div>
+
+        <div class="card">
+          <h2>Student Testimonials</h2>
+          <p class="small">Short quotes from peers make the idea relatable.</p>
+          <ul>
+            <li>"I used to procrastinate on big assignments. Now I split them into steps and it actually works." — Ava</li>
+            <li>"Working together made group projects less messy — we had a plan." — Marcus</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Quick Resources</h2>
+          <p class="small">Starting tips for students:</p>
+          <ul>
+            <li>Try the 2-minute plan: write 3 tasks and the first small step for each.</li>
+            <li>Use a shared checklist (Google Docs) for group tasks.</li>
+            <li>Set one mini-deadline per day — small wins build momentum.</li>
+          </ul>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card signup" id="signup">
+          <h3>Join the Club</h3>
+          <p class="small">Sign up to try one free session. No commitment.</p>
+          <form onsubmit="event.preventDefault();alert('Thanks! The form is a demo — copy the info to an email and send it to your club advisor.');">
+            <label>Name</label>
+            <input required placeholder="Your name">
+            <label>Grade</label>
+            <select required>
+              <option value="">Select grade</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+            </select>
+            <label>Email</label>
+            <input required type="email" placeholder="school email">
+            <label>Why do you want to join? (optional)</label>
+            <textarea placeholder="Short note..." rows="3"></textarea>
+            <button type="submit">Request a Free Session</button>
+          </form>
+
+          <hr style="margin:12px 0;border:none;border-top:1px dashed #eee">
+          <p class="small"><strong>Club advisor:</strong> Mr. Patel<br><strong>When:</strong> Thursdays after school • Room 205</p>
+        </div>
+
+        <div class="card">
+          <h4>Club Goals</h4>
+          <p class="small">Every month we pick small goals — plan faster, divide tasks clearly, and reflect weekly. Simple, repeatable, effective.</p>
+          <a class="cta" href="#meetings">See Meeting Plan</a>
+        </div>
+
+        <div class="card">
+          <h4>Works Cited / Resources</h4>
+          <p class="small">Short list of sites used to build our plan:</p>
+          <ul class="small">
+            <li>American Psychological Association — Procrastination research</li>
+            <li>Edutopia — STEM & teamwork</li>
+            <li>Verywell Mind — Time management tips</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="small">Magnet STEM Club • Build. Plan. Succeed. • Created by a student for students.</p>
+      <p class="small">Want this as a printable one-page flyer or a Canva design? Ask me and I’ll convert it.</p>
+    </div>
+  </footer>
+</body>
+</html>
